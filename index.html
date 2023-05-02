@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>TodoList</title>
+
+</head>
+<body>
+    <div class="todo-container">
+        <header>
+            <h1>TodoList</h1>
+        </header>
+        <form id="todo-form">
+            <p>Adicione a sua tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+                <button type="submit">
+                    <i class="ph ph-plus"></i>
+                </button>
+            </div>
+        </form>
+
+        <form id="edit-form">
+            <p>Edite sua tarefa</p>
+            <div class="form-control">
+                <input type="text" id="edit-form">
+                <button type="submit">
+                    <i class="ph ph-check"></i>
+                </button>
+            </div>
+        </form>
+
+            <div id="toolbar">
+                <h4>Pesquisar></h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar">
+                    <button class="erase-button">
+                        <i class="ph ph-backspace"></i>
+                    </button>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
